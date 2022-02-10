@@ -86,3 +86,50 @@
         margin-top: 48px;
     }
 }
+
+@media (max-width: 544px) {
+    .regist__link {
+        display: none;
+    }
+
+    .cart__btn {
+        display: none;
+    }
+
+    .intro {
+        justify-content: center;
+        align-items: center;
+
+        &__photo {
+            display: none;
+        }
+
+        &__box {
+            margin: 0;
+        }
+    }
+
+    .merch {
+        margin: 64px auto 0;
+
+        &__top {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__item {
+            margin: 8px 0;
+        }
+    }
+
+    .footer__box {
+        flex-direction: column;
+        align-items: center;
+        padding: 43px 0 9px;
+
+        & p {
+            order: 2;
+            margin-top: 40px;
+        }
+    }
+}

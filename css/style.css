@@ -1441,11 +1441,27 @@ main {
   font-weight: 300;
   font-size: 13px;
   line-height: 16px;
-  color: #B1B1B1;
+  color: #000;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin-bottom: 20px;
   border: 1px solid #A4A4A4;
+}
+
+.cart__form input::-webkit-input-placeholder {
+  color: #B1B1B1;
+}
+
+.cart__form input:-ms-input-placeholder {
+  color: #B1B1B1;
+}
+
+.cart__form input::-ms-input-placeholder {
+  color: #B1B1B1;
+}
+
+.cart__form input::placeholder {
+  color: #B1B1B1;
 }
 
 .cart__form button {
@@ -1862,8 +1878,61 @@ main {
   }
 }
 
-/*===========Catalog=============*/
-@media (max-width: 768px) {
+@media (max-width: 544px) {
+  .regist__link {
+    display: none;
+  }
+  .cart__btn {
+    display: none;
+  }
+  .intro {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .intro__photo {
+    display: none;
+  }
+  .intro__box {
+    margin: 0;
+  }
+  .merch {
+    margin: 64px auto 0;
+  }
+  .merch__top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .merch__item {
+    margin: 8px 0;
+  }
+  .footer__box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 43px 0 9px;
+  }
+  .footer__box p {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 1064px) {
   .arrival__box h3 {
     margin-left: 16px;
   }
@@ -1904,7 +1973,7 @@ main {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 544px) {
   .arrival__box {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1943,7 +2012,6 @@ main {
   }
 }
 
-/*===========Product=============*/
 @media (max-width: 768px) {
   .women__top {
     min-height: 624px;
@@ -2002,6 +2070,4 @@ main {
     display: none;
   }
 }
-
-/*===========Cart=============*/
 /*# sourceMappingURL=style.css.map */

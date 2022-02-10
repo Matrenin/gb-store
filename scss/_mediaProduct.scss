@@ -1,0 +1,65 @@
+@media (max-width: 768px) {
+    .women__top{
+        min-height: 624px;
+        background-size: 60%;
+    }
+
+    .women__bot {
+        margin-top: 0;
+    }
+
+    .product-content {
+        margin-bottom: 129px;
+    }
+
+    .product-cart {
+        order: 2;
+    }
+
+    .cart-three {
+        display: none;
+    }
+}
+
+@media (max-width: 375px) {
+    .women__top {
+        background-size: 100%;
+    }
+
+    .women__description p {
+        margin-top: 32px;
+        max-width: 326px;
+        width: 100%;
+        line-height: 20px;
+    }
+
+    .women-select {
+        justify-content: space-around;
+    
+        &__box span {
+            font-size: 10px;
+            line-height: 12px;
+        }
+    }
+
+    .women__bot {
+        margin-bottom: 24px;
+    
+        & button {
+            margin-top: 65px;
+        }
+    }
+
+    .product-content {
+        margin-bottom: 64px;
+    }
+
+    .cart-three {
+        display: block;
+        order: 2;
+    }
+
+    .cart-two {
+        display: none;
+    }
+}
