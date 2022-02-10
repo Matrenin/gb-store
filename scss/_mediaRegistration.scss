@@ -1,0 +1,23 @@
+@media (max-width: 768px) {
+   .registration {
+       margin-top: 40px;
+       padding: 0 16px;
+       box-sizing: border-box;
+       
+       &__rules {
+           max-width: 354px;
+           width: 100%;
+       }
+   }
+}
+
+@media (max-width: 475px) {
+    .registration {
+        flex-direction: column;
+        align-items: center;
+
+        &__rules {
+            margin-top: 40px;
+        }
+    }
+}

@@ -1,0 +1,71 @@
+.merch {
+    margin-top: 65px;
+    margin-bottom: 96px;
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 65px;
+    }
+
+    &__item {
+        max-width: 360px;
+        width: 100%;
+        min-height: 260px;
+        background-image: url("../img/group36.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        & p {
+            color: #fff;
+            font-size: 16px;
+            line-height: 19px;
+        }
+
+        & h4 {
+            color: #F16D7F;
+            font-size: 24px;
+            line-height: 29px;
+            font-weight: 700;
+        }
+    }
+
+    .men {
+        background-image: url("../img/group37.png");
+    }
+
+    .kids {
+        background-image: url("../img/group38.png");
+    }
+
+    .merch__bot {
+        width: 100%;
+        min-height: 180px;
+        background-image: url("../img/group39.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-position: center;
+
+        & p {
+            color: #fff;
+            font-size: 16px;
+            line-height: 19px;
+        }
+
+        & h4 {
+            color: #F16D7F;
+            font-size: 24px;
+            line-height: 29px;
+            font-weight: 700;
+        }
+    }
+}

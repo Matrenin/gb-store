@@ -1,0 +1,46 @@
+.intro {
+    min-height: 764px;
+    background: #F1E4E6;
+    display: flex;
+
+    &__photo {
+        width: 50%;
+        background-image: url("../img/intromen.png");
+        background-repeat: no-repeat;
+        background-position: right center;
+    }
+
+    &__box {
+        color: #222;
+        margin-top: 270px;
+        margin-left: 88px;
+        position: relative;
+        text-transform: uppercase;
+
+        & h3 {
+            font-size: 48px;
+            line-height: 58px;
+            font-weight: 900;
+        }
+
+        & h4 {
+            font-size: 31px;
+            line-height: 37px;
+            font-weight: 700;
+
+            & span {
+                color: #F16D7F;
+            }
+        }
+
+        &::before {
+            content: "";
+            width: 12px;
+            height: 92px;
+            background: #F16D7F;
+            position: absolute;
+            top: 0;
+            left: -28px;;
+        }
+    }
+}

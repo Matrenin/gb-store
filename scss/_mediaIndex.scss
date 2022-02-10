@@ -1,0 +1,88 @@
+@media (max-width: 1095px) {
+    .header__box {
+        padding: 18px 32px;
+        box-sizing: border-box;
+    }
+
+    .intro__photo {
+        background-position: center;
+    }
+
+    .merch {
+        box-sizing: border-box;
+        padding: 0 16px;
+
+        &__top {
+            margin-bottom: 0;
+        }
+
+        &__item {
+            margin: 0 8px;
+        }
+    }
+
+    .content__box {
+        justify-content: center;
+    }
+
+    .content__item {
+        margin: 15px;
+    }
+
+    .footer__box {
+        padding: 0 32px;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 768px) {
+    .intro {
+        min-height: 368px;
+
+        &__photo {
+            background-size: cover;
+        }
+
+        &__box {
+            margin: 134px 0 0 67px;
+
+            & h3 {
+                font-size: 44px;
+                line-height: 53px;
+            }
+
+            & h4 {
+                font-size: 24px;
+                line-height: 29px;
+            }
+        }
+    }
+
+    .merch {
+        margin-top: 0;
+    }
+
+    .feature__box {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 0 64px 0;
+    }
+
+    .feature__item {
+        margin-top: 48px;
+    }
+
+    .subscribe__box {
+        flex-direction: column;
+        align-items: center;
+        padding: 54px 0 140px 0;
+    }
+
+    .subscribe__left {
+        padding: 0;
+    }
+
+    .subscribe__right {
+        margin-top: 48px;
+    }
+}

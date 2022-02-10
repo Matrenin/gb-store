@@ -1,0 +1,39 @@
+.footer {
+    width: 100%;
+    background: #222224;
+
+    &__box {
+        min-height: 79px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 19px;
+        color: #FBFBFB;
+    }
+
+    .social__box {
+        display: flex;
+    }
+
+    .social__item {
+        margin-left: 7px;
+        width: 32px;
+        height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #fff;
+    }
+
+    .social__item:hover {
+        background: #F16D7F;
+
+        & svg {
+            fill: #fff;
+        }
+    }
+}
