@@ -119,6 +119,16 @@ main {
   position: relative;
 }
 
+.header .menu label:hover span,
+.header .menu label:hover span::before,
+.header .menu label:hover span::after {
+  background: #F1A9B3;
+}
+
+.header .menu label:hover .header .menu label span {
+  background: #F16D7F;
+}
+
 .header .menu label span {
   display: block;
   width: 100%;
@@ -155,6 +165,10 @@ main {
   fill: #E8E8E8;
 }
 
+.header .regist__link svg:hover {
+  fill: #F1A9B3;
+}
+
 .header .cart__btn {
   margin-right: 16px;
   margin-left: 32px;
@@ -163,13 +177,18 @@ main {
   width: 32px;
   height: 29px;
   position: relative;
+  cursor: pointer;
+}
+
+.header .cart__btn:hover svg {
+  fill: #F1A9B3;
 }
 
 .header .cart__btn svg {
   fill: #E8E8E8;
 }
 
-.header .cart__btn span {
+.header .cart__btn > span {
   padding: 2px 7px;
   width: 7px;
   height: 14px;
@@ -179,6 +198,59 @@ main {
   position: absolute;
   top: -8px;
   right: -11px;
+}
+
+.header .basket {
+  position: absolute;
+  z-index: 3;
+  top: 44px;
+  right: 12px;
+  width: 600px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  background: #fff;
+  border: 2px solid #ebebeb;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.header .basket__row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.header .basket__total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 16px;
+}
+
+.header .basket__cart-item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  padding-bottom: 10px;
+}
+
+.header .hidden {
+  display: none;
 }
 
 .header #menu:checked ~ .header__menu {
