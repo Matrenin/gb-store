@@ -47,7 +47,7 @@
     margin-bottom: 22px;
     margin-left: 11px;
 
-    & > a {
+    & > p {
         display: block;
         width: 80%;
         text-decoration: none;
@@ -57,6 +57,7 @@
         padding: 8px 0 11px 22px;
         border-bottom: 1px solid #EBEBEB;
         position: relative;
+        cursor: pointer;
 
         &::before {
             content: "";
@@ -163,4 +164,9 @@
     background-image: url("../img/checkmark.png");
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+
+.hidden {
+    display: none;
 }

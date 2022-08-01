@@ -1,15 +1,15 @@
-Vue.component("products", {
+Vue.component("catalog", {
     data() {
         return {
-            productsObj: [],
             catalogUrl: "/catalog.json",
+            productsObj: [],
             filtered: [],
         }
     },
     methods: {
         filter(search) {
             let regexp = new RegExp(search, "i");
-            this.filtered = this.products.filter(el => regexp.test(el.title));
+            this.filtered = this.productsObj.filter(el => regexp.test(el.title));
         },
     },
     mounted() {
@@ -23,12 +23,12 @@ Vue.component("products", {
     },
     template: `
         <div class="content__box container">
-            <product v-for="product of filtered" :key="product.id" :item="product"></product>
+            <catalog-item v-for="product of filtered" :key="product.id" :item="product"></catalog-item>
         </div>
     `
 });
 
-Vue.component("product", {
+Vue.component("catalog-item", {
     props: ["item"],
     template: `
         <article class="content__item" >

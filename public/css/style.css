@@ -60,7 +60,7 @@ main {
   height: 38px;
 }
 
-.header #switch {
+#switch {
   border: none;
   outline: none;
   background: transparent;
@@ -71,7 +71,7 @@ main {
   margin-left: 12px;
 }
 
-.header .header__search {
+.header__search {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -80,7 +80,7 @@ main {
           align-items: center;
 }
 
-.header .header__search label {
+.header__search label {
   display: block;
   width: 26px;
   height: 27px;
@@ -89,7 +89,7 @@ main {
   background-position: center;
 }
 
-.header #switch:focus {
+#switch:focus {
   border-bottom: 2px solid #E8E8E8;
   width: 160px;
   height: 20px;
@@ -97,7 +97,7 @@ main {
   padding-left: 12px;
 }
 
-.header .header__right {
+.header__right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -106,11 +106,11 @@ main {
           align-items: center;
 }
 
-.header #menu {
+#menu {
   display: none;
 }
 
-.header .menu label {
+.menu label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -119,17 +119,17 @@ main {
   position: relative;
 }
 
-.header .menu label:hover span,
-.header .menu label:hover span::before,
-.header .menu label:hover span::after {
+.menu label:hover span,
+.menu label:hover span::before,
+.menu label:hover span::after {
   background: #F1A9B3;
 }
 
-.header .menu label:hover .header .menu label span {
+.menu label:hover .menu label span {
   background: #F16D7F;
 }
 
-.header .menu label span {
+.menu label span {
   display: block;
   width: 100%;
   height: 3px;
@@ -138,7 +138,7 @@ main {
   position: relative;
 }
 
-.header .menu label span::before, .header .menu label span::after {
+.menu label span::before, .menu label span::after {
   content: "";
   width: 100%;
   height: 3px;
@@ -147,29 +147,29 @@ main {
   position: absolute;
 }
 
-.header .menu label span::before {
+.menu label span::before {
   top: -11px;
 }
 
-.header .menu label span::after {
+.menu label span::after {
   top: 11px;
 }
 
-.header .regist__link {
+.regist__link {
   margin-left: 25px;
   width: 29px;
   height: 29px;
 }
 
-.header .regist__link svg {
+.regist__link svg {
   fill: #E8E8E8;
 }
 
-.header .regist__link svg:hover {
+.regist__link svg:hover {
   fill: #F1A9B3;
 }
 
-.header .cart__btn {
+.cart__btn {
   margin-right: 16px;
   margin-left: 32px;
   border: none;
@@ -180,15 +180,15 @@ main {
   cursor: pointer;
 }
 
-.header .cart__btn:hover svg {
+.cart__btn:hover svg {
   fill: #F1A9B3;
 }
 
-.header .cart__btn svg {
+.cart__btn svg {
   fill: #E8E8E8;
 }
 
-.header .cart__btn > span {
+.cart__btn > span {
   padding: 2px 7px;
   width: 7px;
   height: 14px;
@@ -200,7 +200,7 @@ main {
   right: -11px;
 }
 
-.header .basket {
+.basket {
   position: absolute;
   z-index: 3;
   top: 44px;
@@ -216,7 +216,7 @@ main {
   font-weight: bold;
 }
 
-.header .basket__row {
+.basket__row {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[5];
@@ -230,34 +230,79 @@ main {
   border-bottom: 1px solid #ebebeb;
 }
 
-.header .basket__total {
+.basket__total {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 16px;
 }
 
-.header .basket__cart-item {
+.basket__cart-item {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[5];
       grid-template-columns: repeat(5, 1fr);
   gap: 10px;
+  margin: 8px 0;
   padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.header .hidden {
+.basket__cart-item:last-child {
+  margin-bottom: 30px;
+}
+
+.basket__cart-item button {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  border: 1px solid #F16D7F;
+  color: #F16D7F;
+  border-radius: 6px;
+  background: #fff;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -webkit-transition: .7s;
+  transition: .7s;
+}
+
+.basket__cart-item button:hover {
+  background: #F16D7F;
+  color: #fff;
+}
+
+.cart__order-link {
+  text-decoration: none;
+  border: 1px solid #F16D7F;
+  color: #F16D7F;
+  padding: 8px 22px;
+  border-radius: 6px;
+  -webkit-transition: .7s;
+  transition: .7s;
+}
+
+.cart__order-link:hover {
+  background: #F16D7F;
+  color: #fff;
+}
+
+.hidden {
   display: none;
 }
 
-.header #menu:checked ~ .header__menu {
+#menu:checked ~ .header__menu {
   display: block;
 }
 
-.header .header__menu {
+.header__menu {
   display: none;
   position: absolute;
   top: 74px;
@@ -267,12 +312,12 @@ main {
   background: #fff;
 }
 
-.header .menu__list {
+.menu__list {
   padding: 37px 73px 157px 33px;
   width: 126px;
 }
 
-.header .menu__list:first-child {
+.menu__list:first-child {
   font-weight: 700;
   font-size: 14px;
   line-height: 17px;
@@ -280,28 +325,28 @@ main {
   text-transform: uppercase;
 }
 
-.header .menu__list-item {
+.menu__list-item {
   list-style: none;
   margin-top: 20px;
 }
 
-.header .menu__list-item a {
+.menu__list-item a {
   font-size: 14px;
   line-height: 17px;
   color: #F16D7F;
   text-decoration: none;
 }
 
-.header .menu__list-item a:hover {
+.menu__list-item a:hover {
   text-decoration: underline;
 }
 
-.header .menu__sublist-item {
+.menu__sublist-item {
   list-style: none;
   margin-top: 11px;
 }
 
-.header .menu__sublist-item a {
+.menu__sublist-item a {
   margin-left: 20px;
   font-size: 14px;
   line-height: 17px;
@@ -991,7 +1036,7 @@ main {
   margin-left: 11px;
 }
 
-.filter__menu-item > a {
+.filter__menu-item > p {
   display: block;
   width: 80%;
   text-decoration: none;
@@ -1001,9 +1046,10 @@ main {
   padding: 8px 0 11px 22px;
   border-bottom: 1px solid #EBEBEB;
   position: relative;
+  cursor: pointer;
 }
 
-.filter__menu-item > a::before {
+.filter__menu-item > p::before {
   content: "";
   display: block;
   width: 5px;
@@ -1014,7 +1060,7 @@ main {
   left: 0;
 }
 
-.filter__menu-item > a:hover {
+.filter__menu-item > p:hover {
   text-decoration: underline;
 }
 
@@ -1116,6 +1162,10 @@ main {
   background-image: url("../img/checkmark.png");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.hidden {
+  display: none;
 }
 
 .page-list {
@@ -1457,6 +1507,7 @@ main {
   height: 24px;
   margin-left: 24px;
   border: 1px solid #000;
+  text-align: center;
 }
 
 .cart__btn-box {
