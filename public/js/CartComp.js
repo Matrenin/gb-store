@@ -63,9 +63,9 @@ Vue.component("cart", {
                 </div>
                 <cart-item v-for="item of cartItems" :key="item.id" :item="item"></cart-item>
                 <div class="basket__total">
+                    <a href="cart.html" class="cart__order-link">Оформить заказ</a>
                     <p>Товаров в корзине на сумму: <span class="basket__total-value">{{ sumPrice() }}</span> $</p>
                 </div>
-                <a href="cart.html" class="cart__ofer-link">Оформить заказ</a>
             </div>              
         </button>
     `
