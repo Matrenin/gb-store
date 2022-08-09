@@ -18,6 +18,14 @@
 
         &__rules {
             margin-top: 40px;
+
+            & p {
+                font-size: 18px;
+            }
+
+            & ul li {
+                font-size: 18px;
+            }
         }
     }
 }

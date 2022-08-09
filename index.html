@@ -16,10 +16,7 @@
                     <a href="index.html" class="link__logo">
                         <img src="img/brand.svg" alt="logo" height="20">
                     </a>
-                    <form action="#" class="header__search">
-                        <label for="switch"></label>
-                        <input type="search" id="switch">
-                    </form>
+                    <search ref="search"></search>
                 </div>
     
                 <div class="header__right">
@@ -50,7 +47,7 @@
                                     </ul>
                                 </li>
                                 <li class="menu__list-item">
-                                    <a href="product.html">woman</a>
+                                    <a id="woman-link" style="transform: scale(1.3)" href="product.html">woman</a>
                                     <ul class="menu__sublist">
                                         <li class="menu__sublist-item">
                                             <a href="#">Accessories</a>
@@ -221,6 +218,7 @@
     <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="js/ProductComp.js"></script>
+    <script src="js/FormComp.js"></script>
     <script src="js/CartComp.js"></script>
     <script src="js/main.js"></script>
     

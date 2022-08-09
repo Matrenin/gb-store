@@ -88,8 +88,24 @@
 }
 
 @media (max-width: 544px) {
+    .header__box {
+        padding: 18px 16px;
+    }
+
+    .header__left a {
+        margin-right: 20px;
+    }
+
+    .header__search input {
+        width: 100px;
+    }
+
     .regist__link {
         display: none;
+    }
+
+    .menu__list {
+        padding-bottom: 40px;
     }
 
     .cart__btn {
@@ -106,6 +122,17 @@
 
         &__box {
             margin: 0;
+
+            & h3 {
+                font-size: 33px;
+            }
+
+            &::before {
+                width: 8px;
+                height: 76px;
+                top: 8px;
+                left: -18px;
+            }
         }
     }
 
@@ -119,6 +146,12 @@
 
         &__item {
             margin: 8px 0;
+        }
+
+        .merch__bot {
+            margin-top: 16px;
+            min-height: 100px;
+            background-size: cover;
         }
     }
 

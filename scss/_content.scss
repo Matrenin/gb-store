@@ -143,11 +143,32 @@
             background: #fff;
             border: 1px solid #FF6A6A;
             text-decoration: none;
+            animation-name: contentLink;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+            animation-direction: alternate;
 
             &:hover {
                 color: #fff;
                 background: #F26376;
+                animation: none;
             }
         }
+    }
+}
+
+@keyframes contentLink {
+    0% {
+        outline: none;
+    }
+    30% {
+        outline: 3px solid #F26376;  
+    }
+    60% {
+        outline: 6px solid #F26376;
+    }
+    100% {
+        outline: 10px solid #F26376;
     }
 }

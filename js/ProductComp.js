@@ -6,10 +6,10 @@ Vue.component("products", {
             filtered: [],
         }
     },
-    methods: {
+    methods: {        
         filter(search) {
             let regexp = new RegExp(search, "i");
-            this.filtered = this.products.filter(el => regexp.test(el.title));
+            this.filtered = this.productsObj.filter(el => regexp.test(el.title));
         },
     },
     mounted() {
